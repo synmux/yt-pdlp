@@ -6,10 +6,10 @@ V0_API_KEY = ''
 env_file = '.env'
 
 [tools]
-ruff = { version = '0.16.8' }
-uv = { version = '0.12.18' }
-ty = { version = '0.0.84' }
-python = { version = "3.14.7" }
+ruff = { version = '0.17.1' }
+uv = { version = '0.13.1' }
+ty = { version = '0.0.89' }
+python = { version = "3.15.0" }
 
 [tasks]
 claude = 'npx --yes @anthropic-ai/claude-code@latest'
