@@ -2,6 +2,8 @@ version: 2
 updates:
   # Configuration for pip
   - package-ecosystem: pip
+    cooldown:
+      default-days: 7
     directory: /
     schedule:
       interval: daily
@@ -10,6 +12,8 @@ updates:
       - synmux
   # Configuration for docker
   - package-ecosystem: docker
+    cooldown:
+      default-days: 7
     directory: /
     schedule:
       interval: daily
@@ -18,6 +22,8 @@ updates:
       - synmux
   # Configuration for github-actions
   - package-ecosystem: github-actions
+    cooldown:
+      default-days: 7
     directory: /
     schedule:
       interval: daily
