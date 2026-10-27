@@ -18,10 +18,11 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   disabled:
+    # Trunk plugins v1.11.0 still pass pinact the single-dash `-format` flag, which pinact 5 rejects.
+    - pinact
     - black # ruff-format is the formatter of record (pyproject line-length 100)
     - isort
   enabled:
-    - pinact@5.0.2
     - actionlint@1.7.12
     - hadolint@2.15.1
     - checkov@3.3.30
