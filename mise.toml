@@ -7,9 +7,9 @@ env_file = '.env'
 
 [tools]
 ruff = { version = '0.17.1' }
-uv = { version = '0.13.1' }
-ty = { version = '0.0.89' }
-python = { version = "3.15.0" }
+uv = "0.13.4"
+ty = "0.0.90"
+python = "3.15.1"
 
 [tasks]
 claude = 'npx --yes @anthropic-ai/claude-code@latest'
